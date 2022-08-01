@@ -1,4 +1,3 @@
-import 'package:delivery_app/detailsPage.dart';
 import 'package:delivery_app/style.dart';
 import 'package:flutter/material.dart';
 
@@ -294,8 +293,6 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
-
-
 
 categoryCard(double cWidth, double sideMagin, Map data, bool active) {
   return Container(
