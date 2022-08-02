@@ -1,3 +1,4 @@
+import 'package:delivery_app/globalData.dart';
 import 'package:delivery_app/style.dart';
 import 'package:flutter/material.dart';
 
@@ -161,7 +162,7 @@ class _HomePageState extends State<HomePage> {
                   radius: 9,
                   backgroundColor: cPrimary,
                   child: Text(
-                    "3",
+                    cartData.length.toString(),
                     style: TextStyle(color: cWhite),
                   ),
                 ),

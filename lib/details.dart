@@ -113,33 +113,7 @@ class _DetailState extends State<Detail> {
     Color black = Colors.black;
 
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          "Restaurant View",
-          style: subText1(size: 18),
-        ),
-        elevation: 0,
-        backgroundColor: Colors.white,
-        iconTheme: IconThemeData(color: transDarkColor(0.8)),
-        titleTextStyle: TextStyle(color: transDarkColor(0.8)),
-        actions: [
-          CircleAvatar(
-              backgroundColor: Colors.green.withOpacity(0.2),
-              child: IconButton(
-                icon: Icon(Icons.shopping_bag),
-                color: transDarkColor(0.8),
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (BuildContext context) {
-                    return CartPage();
-                  }));
-                },
-              )),
-          SizedBox(
-            width: sideMagin,
-          )
-        ],
-      ),
+      appBar: customAppBar(context, sideMagin, "Restaurant View"),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
